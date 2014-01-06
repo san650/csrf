@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   resources :posts, only: :create
 
+  match 'like', to: 'likes#create', via: :all, as: :like
+
   root to: 'homes#show'
 end

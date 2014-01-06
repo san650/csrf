@@ -1,5 +1,9 @@
 <h1><%= post.title %></h1>
 <p>
-  Posted by <%= post.user.name %>, <%= time_ago_in_words(post.created_at) %>
+  Posted by <%= post.user.name %>, <%= time_ago_in_words(post.created_at) %> ago
 </p>
-<%= raw post.body %>
+<%= markdown_format post.body %>
+<p>
+  <%= link_to 'Like!', like_url(post_id: post) %>
+  <%= pluralize post.likes.count, 'person' %> like this
+</p>

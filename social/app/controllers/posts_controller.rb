@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
+  FEATURED_LIMIT = 3
+
   def index
-    @posts = Post.all
+    @posts = Post.ordered.limit(FEATURED_LIMIT)
     @post = current_user.posts.build
   end
 
