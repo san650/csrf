@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Vote!</title>
+    <style>
+      .content{width: 620px; margin: 0 auto}
+      .image, .image img { width: 300px }
+      .image { float: left; margin-right: 10px }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Vote the funniest</h1>
+      <div class="image">
+        <img src="Broken image" alt="" onerror="this.src = 'cute1.jpg';" onload="" />
+
+        <form action="#thank_you" target="iframe">
+          <!-- forge a request here! -->
+          <button type="submit">Vote!</button>
+        </form>
+      </div>
+      <div class="image">
+        <img src="cute2.jpg" alt="" />
+        <button type="submit">Vote!</button>
+      </div>
+
+      <iframe id="iframe" style="width:0;height:0"></iframe>
+  </div>
+  </body>
+</html>

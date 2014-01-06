@@ -1,0 +1,22 @@
+Pre
+===
+
+Para levantar el sitio `cats`, en la carpeta del proyecto ejecutar:
+$ rackup
+
+Para levantar el sitio a atacar `social`, en la carpeta del proyecto ejecutar:
+$ rails s
+
+Ingresar en http://localhost:3000/ con las credenciales:
+usr: good@example.com
+pas: secret
+
+
+Ejercicios
+==========
+
+1. Crear un post en el sitio `social` utilizando las credenciales
+   del usuario actual cuando el usuario hace click en `Vote!`
+2. Votar por el post de id 1 cuando el usuario visita la página 
+   utilizando onload de la imágen 2
+3. Votar utilizando GET cuando se carga una de las imágenes
